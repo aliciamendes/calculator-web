@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
+
+    <title>Calculator</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="text" id="useinp" placeholder="0" disabled>
+        <input type="text" id="compout" placeholder="0" disabled>
+
+        <table>
+            <tr>
+                <td onclick="calcad('(')">
+                    <button> ( </button>
+                </td>
+                <td onclick="calcad(')')">
+                    <button> ) </button>
+                </td>
+                <td onclick="removeCH( )">
+                    <button> &lt;- </button>
+                </td>
+                <td onclick="calcad('+')" class="var">
+                    <button> + </button>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="calcad('7')">
+                    <button> 7 </button>
+                </td>
+                <td onclick="calcad('8')">
+                    <button> 8 </button>
+                </td>
+                <td onclick="calcad('9')">
+                    <button> 9 </button>
+                </td>
+                <td onclick="calcad('-')" class="var">
+                    <button> - </button>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="calcad('4')">
+                    <button> 4 </button>
+                </td>
+                <td onclick="calcad('5')">
+                    <button> 5 </button>
+                </td>
+                <td onclick="calcad('6')">
+                    <button> 6 </button></td>
+                <td onclick="calcad('*')" class="var">
+                    <button> * </button>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="calcad('1')">
+                    <button> 1 </button>
+                </td>
+                <td onclick="calcad('2')">
+                    <button> 2 </button>
+                </td>
+                <td onclick="calcad('3')">
+                    <button> 3 </button>
+                </td>
+                <td onclick="calcad('/')" class="var">
+                    <button> / </button>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="reset()">
+                    <button> <b> C </b> </button>
+                </td>
+                <td onclick="calcad('0')">
+                    <button> 0 </button>
+                </td>
+                <td onclick="calcad('.')">
+                    <button> . </button>
+                </td>
+                <td onclick="exeCM()" class="equalBTn">
+                    <button> = </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
