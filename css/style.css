@@ -43,7 +43,9 @@ input {
     height: 30px;
     margin-top: 5%;
     width: 100%;
-    padding-left: 10px;
+    font-size: 1em;
+    text-align: right;
+    padding-right: 5%;
 }
 
 button {
@@ -55,6 +57,13 @@ button {
     margin: 5px;
     background: #ECF0F3;
     box-shadow: 5px 5px 20px #D8DCE5, -2px -2px 10px white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1em;
+}
+
+button:hover {
+    box-shadow: -2px -2px 20px #D8DCE5, 2px 2px 10px white;
 }
 
 input:focus {
