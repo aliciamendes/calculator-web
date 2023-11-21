@@ -1,25 +1,25 @@
-var tb = '';
+var tab = '';
 
 const useinp = document.querySelector('#useinp');
 const compout = document.querySelector('#compout');
 
 function calcad(value) {
-    tb += value;
-    useinp.value = tb;
+    tab += value;
+    useinp.value = tab;
 }
 
 function removeCH() {
-    tb = tb.substring(0, tb.length - 1);
-    useinp.value = tb;
+    tab = tab.substring(0, tab.length - 1);
+    useinp.value = tab;
 }
 
 function exeCM() {
-    if (tb.length === 0 || tb === "") {
+    if (tab.length === 0 || tab === "") {
         alert('Insira um valor');
         return
     }
     try {
-        awnser = eval(tb);
+        awnser = eval(tab);
         compout.value = awnser;
     } catch (error) {
         alert('Entrada inválida')
@@ -29,5 +29,5 @@ function exeCM() {
 function reset() {
     useinp.value = '';
     compout.value = '';
-    tb = '';
+    tab = '';
 }
